@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-bar">
+        <div class="logo">Javascript Assignment</div>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a href="./song.html">Generate Song</a></li>
+            <li><a href="">Animal Sound & Message</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <div>
+        <h2>Animal Sound & Message</h2>
+      </div>
+      <div class="form-div">
+        <div id="result" class="animal-result">
+            <div id="animalSound" class="animal-sound"></div>
+            <div id="animalMessage" class="animal-message"></div>
+        </div>
+        <form id="animalForm">
+          <div class="form-div">
+            <div><label for="userInput">Animal Name</label></div>
+            <div>
+              <input type="text" id="animalName" class="input-text" required />
+            </div>
+          </div>
+          <div class="form-div">
+            <div><label for="userInput">Animal Species</label></div>
+            <div>
+              <input
+                type="text"
+                id="animalSpecies"
+                class="input-text"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-div">
+            <div><label for="userInput">Animal Phrase/Noise</label></div>
+            <div>
+              <input
+                type="text"
+                id="animalPhrase"
+                class="input-text"
+                required
+              />
+            </div>
+            <div class="form-div">
+                <div><label for="userInput">Message</label></div>
+                <div>
+                  <input
+                    type="text"
+                    id="message"
+                    class="input-text"
+                    
+                  />
+                </div>
+            <div class="form-div">
+              <button id="getSoundBtn" class="input-btn" type="submit">
+                Get Sound
+              </button>
+              <button id="getMessageBtn" class="input-btn" type="submit">
+                Get Message
+              </button>
+              <button id="resetBtn" type="reset" class="input-btn reset">
+                Reset
+              </button>
+            </div>
+           
+          </div>
+        
+        </form>
+      </div>
+      
+    </div>
+    <script src="./script3.js"></script>
+  </body>
+</html>
